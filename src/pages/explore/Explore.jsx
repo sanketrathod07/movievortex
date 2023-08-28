@@ -80,7 +80,7 @@ const Explore = () => {
                 delete filters.sort_by;
             }
         }
-    
+
         if (action.name === "genres") {
             setGenre(selectedItems);
             if (action.action !== "clear") {
@@ -91,7 +91,7 @@ const Explore = () => {
                 delete filters.with_genres;
             }
         }
-    
+
         setPageNum(1);
         fetchInitialData();
     };
