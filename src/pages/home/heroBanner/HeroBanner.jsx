@@ -11,7 +11,7 @@ const HeroBanner = () => {
   const [query, setQuery] = useState("");
   const navigate = useNavigate();
   const { url } = useSelector((state) => state.home);
-  const { data, loading } = useFetch("/movie/upcoming");
+  const { data, loading } = useFetch("/trending/all/week");
 
   useEffect(() => {
     const bg =
@@ -21,7 +21,12 @@ const HeroBanner = () => {
   }, [data]);
 
   const searchQueryHandler = (e) => {
-    if (e.key === "Enter" && query.length > 0) {
+    if (e.key === "Enter") {
+      searchHandler();
+    }
+  };
+  const searchHandler = () => {
+    if (query.length > 0) {
       navigate(`/search/${query}`);
     }
   };

@@ -4,6 +4,9 @@ import {
     FaInstagram,
     FaTwitter,
     FaLinkedin,
+    FaYoutube,
+    FaFacebookMessenger,
+    FaHackerrank,
 } from "react-icons/fa";
 
 import ContentWrapper from "../contentWrapper/ContentWrapper";
@@ -30,18 +33,20 @@ const Footer = () => {
                     esse cillum dolore eu fugiat nulla pariatur.
                 </div>
                 <div className="socialIcons">
-                    <span className="icon">
-                        <FaFacebookF />
+                    <span className="icon"><a href="https://www.linkedin.com/in/sanketrathod757"> 
+                        <FaLinkedin /></a>
+                    </span>
+                    <span className="icon"><a href="https://www.hackerrank.com/sanketrathod7420?hr_r=1"> 
+                    <FaHackerrank /></a>
                     </span>
                     <span className="icon">
-                        <FaInstagram />
+                        <a target="_blank" href="https://www.instagram.com/mr.sanket.r"><FaInstagram /></a>
+                        
                     </span>
-                    <span className="icon">
-                        <FaTwitter />
+                    <span href="https://www.youtube.com/sanketrathodyt" className="icon">
+                        <FaYoutube />
                     </span>
-                    <span className="icon">
-                        <FaLinkedin />
-                    </span>
+                    
                 </div>
             </ContentWrapper>
         </footer>
